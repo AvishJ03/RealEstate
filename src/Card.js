@@ -27,8 +27,8 @@ const Card = ({ data }) => {
 
       <Box p="6">
         <Box display="flex" alignItems="baseline">
-          <Badge borderRadius="full" px="2" colorScheme="teal">
-            New
+          <Badge borderRadius="full" px="2" colorScheme="purple">
+            RENT
           </Badge>
           <Box
             color="gray.500"
@@ -56,7 +56,7 @@ const Card = ({ data }) => {
         <Box fontWeight="semibold">
           ${property.formattedPrice}
           <Box as="span" color="gray.500" fontSize="sm">
-            / month
+            /month
           </Box>
         </Box>
         <Box mt="1" as="h4" lineHeight="tight" noOfLines={1}>

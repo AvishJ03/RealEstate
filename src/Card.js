@@ -1,21 +1,20 @@
 import React from "react";
 import { Box, Image, Badge } from "@chakra-ui/react";
-import data from "./data.js";
 
-const Card = () => {
+const Card = ({ data }) => {
   const property = {
-    imageUrl: data[0]["imgSrc"],
+    imageUrl: data["imgSrc"],
     imageAlt: "Rear view of modern home with pool",
-    beds: data[0]["beds"],
-    baths: data[0]["baths"],
-    area: data[0]["area"],
-    title: data[0]["title"],
-    formattedPrice: data[0]["unformattedPrice"],
-    address: data[0]["address"],
+    beds: data["beds"],
+    baths: data["baths"],
+    area: data["area"],
+    title: data["title"],
+    formattedPrice: data["unformattedPrice"],
+    address: data["address"],
   };
 
   return (
-    <Box maxW="sm" borderWidth="1px" borderRadius="xl" overflow="hidden">
+    <Box maxW="sm" borderWidth="1px" borderRadius="xl" overflow="hidden" mx="10">
       <Image src={property.imageUrl} alt={property.imageAlt} />
 
       <Box p="6">

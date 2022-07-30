@@ -2,7 +2,7 @@ import { Button, HStack, Select } from "@chakra-ui/react";
 import { useState } from "react";
 import data from "./data";
 
-const Filters = () => {
+const Filters = ({ setArr }) => {
   const [address, setAddress] = useState(null);
   const [price, setPrice] = useState(null);
   const [property, setProperty] = useState(null);
@@ -28,6 +28,7 @@ const Filters = () => {
     e.preventDefault();
     var farr = data.filter(fil);
     console.log(farr);
+    setArr(farr);
   }
 
   function fil(data) {
@@ -58,7 +59,7 @@ const Filters = () => {
   }
 
   return (
-    <HStack bg="white">
+    <HStack justify="center" bg="white" spacing={20} p={5} borderRadius="xl">
       <Select
         color="#7165EE"
         w="container.xs"

@@ -4,7 +4,7 @@ import Card from "./Card";
 
 const Properties = ({ arr }) => {
   return (
-    <Grid templateColumns='repeat(3, 1fr)' gap={6}>
+    <Grid templateColumns='repeat(3, 1fr)' gap={7}>
       {arr
         .filter((data, idx) => idx < 9)
         .map((data, idx) => {

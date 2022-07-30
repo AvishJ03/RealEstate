@@ -14,7 +14,15 @@ const Card = ({ data }) => {
   };
 
   return (
-    <Box maxW="sm" borderWidth="1px" borderRadius="xl" overflow="hidden" mx="10">
+    <Box
+      maxW="sm"
+      borderWidth="1px"
+      borderRadius="xl"
+      overflow="hidden"
+      mx="10"
+      bg="white"
+      shadow="xl"
+    >
       <Image src={property.imageUrl} alt={property.imageAlt} />
 
       <Box p="6">
